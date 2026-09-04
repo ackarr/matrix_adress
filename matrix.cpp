@@ -1,5 +1,5 @@
 #include <stdio.h>
-int PrintMtx(int* data[][], int sizeY, int sizeX);
+int PrintMtx(int data[][4], int sizeY, int sizeX);
 
 int main()
 {
@@ -13,13 +13,13 @@ int main()
 }
 
 
-int PrintMtx(int data[][], int sizeY, int sizeX)
+int PrintMtx(int data[][4], int sizeY, int sizeX)
 {
     for(int y = 0; y < sizeY; y++)
     {
         for(int x = 0; x < sizeX; x++)
         {
-            printf("%d", data[y][x]);
+            printf("%d ", data[y][x]);
         }
 
         printf("\n");
