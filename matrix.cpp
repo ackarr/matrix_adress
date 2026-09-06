@@ -19,7 +19,7 @@ int PrintMtx(int* data, int sizeY, int sizeX)
     {
         for(int x = 0; x < sizeX; x++)
         {
-            printf("%d ", *(data + y*sizeX + x));
+            printf("%d ", data[y*sizeX + x]);
         }
 
         printf("\n");
